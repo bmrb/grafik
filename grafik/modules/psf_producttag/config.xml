@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>psf_producttag</name>
+	<displayName><![CDATA[[&lt;font color=&quot;blue&quot;&gt;P&lt;/font&gt;&lt;font color=&quot;#f4c6c9&quot;&gt;S&lt;/font&gt;&lt;font color=&quot;red&quot;&gt;F&lt;/font&gt;] Product Tags]]></displayName>
+	<version><![CDATA[1.2]]></version>
+	<description><![CDATA[Display tags on product page]]></description>
+	<author><![CDATA[Pierre-Yves (PSF Team)]]></author>
+	<tab><![CDATA[Products]]></tab>
+	<is_configurable>0</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

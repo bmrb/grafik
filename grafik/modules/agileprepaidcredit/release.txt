@@ -1,0 +1,40 @@
+Ver 1.0 - 2011.05.19
+- User can use prepaid tokens/credit to buy products without going though checkout process, Much easier for user to use your PrestaShop store.
+- For downloadable product/online viewable products, user can download/view the products right away by just one click by using the prepaid token.
+- As store owner, you are able to control product information display on product detail page, only show some information after user paid for the product item.
+-You are able set 3 level visibilities of product properties and attributes information at following visibility Level
+ * Always visible
+ * Always hidden
+ * Visible after paid
+-Configurable information block
+ * Images area
+ * Short description area
+ * Price Area/Buy block
+ *Detail Information area
+- User will be automatically redirect to Token packages to purchase or add up tokens it he/she is running out of tokens.
+- Number of available tokens is always displayed on top of the page, customer is easy to know and control his token usages.
+- Customer will receive an New Order email when he/she used tokens to download or browse a digital service like video/articles by token.
+- "Add to cart" button will be hidden automatically one customer paid for the product.
+
+
+Ver 1.1 - 2011.09.05
+- Add to cart will be hidden at product list pages like Home Featured, Category and search result.
+- A popup confirmation message will be display to ask user to confirm when use "one click" purchase button.
+- Fixed issue with Token Unit Price > 1 (a big number)
+
+Ver 1.1.1 - 2011.09.25
+- Fixed issue with mrsuyltiple currency conversion
+
+Ver 1.2.0 - 2011.10.12
+- From this, it now supports PrestaShop 1.3x
+
+Ver 1.2.1 - 2012.01.22
+- Now support repurchase of the same products by token.
+In previous version, for downloadbal products, if you purchase once, you can access the access the product for ever. So you can only purchase one time.
+But for some digital goods business, it is allowed to purchase multiple (any) times for the same products. (for example, online games)
+
+
+=== Future Tasks ====
+have \"requires token\" also on product-list
+manually adjust account token balance
+purchase product with token + other payment

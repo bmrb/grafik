@@ -1,0 +1,22 @@
+<?php
+///==========================================================================================
+/// NOTICE OF LICENSE & DISCLAIMER
+///
+/// This source file is subject to the Software License Agreement that is bundled with this 
+/// package in the file license.txt, or you can get it here
+/// http://addons-modules.com/en/content/3-terms-and-conditions-of-use
+///
+///	We donot recomend to make any changes(customizations) to the PHP files, othrwise you are
+///	not able to upagrde your modules.
+///
+/// If you do need to make changes to source code files, please consult us first.
+/// http://addons-modules.com/en/contact-us
+///
+///	Vist our support forum if you require technical support
+/// http://addons-modules.com/modules/agileforumphpbb/agileforum.php
+///
+/// @copyright  2009-2012 Addons-Modules.com
+/// 
+///==========================================================================================
+
+  class AgileInstantPayment extends PaymentModule  {   public function __construct()   {    $this->name = 'Agile Token Payment';    $this->tab = 'Payment';    $this->version = '1.0';          parent::__construct();      }      }          function create_order($id_product,$id_product_attribute_id)      {          global $cookie;     $customer = new Customer($cookie->id_customer);   $addresses = $customer->getAddresses($cookie->id_lang);                    $id_address = $addresses[0]['id_address'];            $quantity = 1;                                $newcart = new Cart();          $newcart->id_customer = $cookie->id_customer;          $newcart->id_lang = $cookie->id_lang;          $newcart->id_carrier = 0;          $newcart->id_address_delivery = $id_address;          $newcart->id_address_invoice =$id_address;          $newcart->id_currency = $cookie->id_currency;          $newcart->id_guest=0;          $newcart->recyclable = 0;          $newcart->gift = 0;          $newcart->gift_message = '';            $newcart->add();          $sql = 'INSERT INTO `'._DB_PREFIX_.'cart_product` (id_cart,id_product,id_product_attribute,quantity,date_add) VALUES (' . $newcart->id . ',' . $id_product . ','. $id_product_attribute_id. ',' . $quantity. ',\''. date('Y-m-d H:i:s') . '\')';              Db::getInstance()->Execute($sql);                            $payment = new AgileInstantPayment();                  global $cart;          $customer_cart_id = $cart->id;                  $payment->validateOrder($newcart->id, 2 , $newcart->getOrderTotal(), 'Prepaid Token', NULL, array(), NULL, false);                  $cart = new cart($customer_cart_id);      }                  if(Module::isInstalled('agileprepaidcredit'))          {              include_once(dirname(__FILE__).'/../agileprepaidcredit.php');              $agile_pid = intval(Tools::getValue('id_product'));              $agile_paid = intval(Tools::getValue('id_product_attribute'));              $isresume = !agileprepaidcredit::IsProductInLinkedCategory($agile_pid);              $ispaid = agileprepaidcredit::IsProductPaidByCustomer($agile_pid,$cookie->id_customer);              if($isresume AND $agile_pid)              {                  $prod = new Product($agile_pid);                  if(!$cookie->isLogged())Tools::redirect("authentication.php");                  $balance = agileprepaidcredit::GetToeknBalance($cookie->id_customer);                  $unitprice = floatval(Configuration::get('AGILE_PCREDIT_UNITPRICE'));                  if($unitprice == 0)$unitprice = 1;                  $currency = new Currency($cookie->id_currency);                  $tokens = $prod->getPrice(true, $agile_paid,6) / $unitprice / $currency->conversion_rate;                  if($balance < $tokens)Tools::redirect("category.php?id_category=" . Configuration::get('AGILE_PCREDIT_CID'));                  if(!$ispaid)                  {                                          create_order($agile_pid,$agile_paid);                  }                                 $productDownload = new ProductDownload();               if ($id_product_download = $productDownload->getIdFromIdProduct($prod->id))               {                $productDownload = new ProductDownload($id_product_download);                      include_once(dirname(__FILE__).'/../download.php');                  }                  Tools::redirect("product.php?id_product=" . $agile_pid);              }          }        ?>  

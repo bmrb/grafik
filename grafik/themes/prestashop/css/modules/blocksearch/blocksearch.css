@@ -1,0 +1,31 @@
+/* block top search */
+#header_right #search_block_top {
+	float: right;
+	background: #e5e6e7 url('../../../img/block_search_bg.jpg') no-repeat top right;
+	margin-top:15px;
+	margin-bottom: 11px;
+	width: 701px;
+	height: 43px
+}
+#header_right #search_block_top p { padding: 0.4em 0 0em 1em }
+#header_right #search_block_top label, #header_right #search_block_top input { float: left }
+#header_right #search_block_top label {
+	position:absolute;
+	background: transparent url('../../../img/icon/search.gif') no-repeat 0 2px;
+	float: left;
+	width: 19px;
+	height: 18px;
+	display: block;
+	margin-left:2px;
+	margin-top:6px;
+}
+#yazi {
+float:left;	
+}
+#header_right #search_block_top input.search_query { width: 525px; height:32px; margin-left:0px; font-size:14px; font-weight:normal; padding-left:20px; }
+
+
+/* block left column "Quick search" */
+#search_block_left input { margin: 2px 0 0 0 }
+#search_block_left .search_query { width: 11em }
+#search_button { display: inline }

@@ -1,0 +1,14 @@
+#psf_producttag {
+	background: #F1F2F4;
+	border: 1px solid #D0D3D8;
+	padding: 5px;
+	text-align: center;
+}
+
+#psf_producttag a {
+	text-decoration: none;
+}
+
+#psf_producttag a:hover {
+	text-decoration: underline;
+}

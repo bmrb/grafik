@@ -1,0 +1,79 @@
+
+
+.hpt_productbox {
+	width: 100%;
+	background-color: #EFEFEF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+.hpt_eachproduct {
+	float: left;
+	width: 129px;
+	padding: 0px;
+	margin: 3px 3px 3px 4px;
+	border: 1px solid #E8E8E8;
+	min-height: 200px;
+	/*height: 200px;*/
+	border: 1px solid #E8E8E8;
+}
+
+.hpt_eachproduct:hover {
+	background-color: #EBEBEB;
+}
+
+.hpt_descproduct {
+	height: auto;
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+.hpt_pricediv {
+	background-color: #e5e5e5;
+	color: #FF0000;
+	text-align: center;
+	/*height: 13px;*/
+	min-height: 13px;
+	padding: 3px;
+}
+.hpt_buttonpair
+{
+padding:5px;
+ 
+}
+.hpt_buttonpair a
+{
+ margin-bottom:2px; 
+}
+
+.hpt_tab_text {
+	line-height: 26px;
+	height: 26px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.hpt_tab_buf {
+	float: left;
+	width: 8px;
+}
+
+#hpt_tab_cont_cont {
+	width: 99.6%;
+	border: 1px solid #bcbcbc;
+	overflow:hidden;
+}
+
+.hpt_tab_cont_on {
+	width: 100%;
+	
+}
+
+.hpt_tab_cont_off {
+	position: absolute;
+	/*width: 100%;*/
+	margin-top: -6000px;
+}

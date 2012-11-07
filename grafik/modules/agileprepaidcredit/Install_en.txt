@@ -1,0 +1,74 @@
+New Install
+======================
+1. Login to PrestaShop back office and click Modules tab
+2. Click "Add a module from my computer" and choose the module package you have downlaoded and click "Upload this module"
+3. Input "agile" in the search bix of Module page and select "Agile Prepaid Credit"
+4. Click "install" link under the module, the module will be installed automatically.
+5. *** For PrestaShop 1.4x ***
+	   Copy following file manually
+	   From
+		 YoueStoreRoot/modules/agileprepaidcredit/override/controllers/CartController.php
+	   To:
+		 YoueStoreRoot/override/controllers/CartController.php   
+
+  *** For PrestaShop 1.3x ***
+   Modify /cart.php as following
+	   Look for following lines 
+			require_once(dirname(__FILE__).'/config/config.inc.php');
+			require_once(dirname(__FILE__).'/init.php');
+		Add following line after above lines   
+   		    if(Module::isInstalled('agileprepaidcredit'))include_once(dirname(__FILE__).'/modules/agileprepaidcredit/inc1.3x/cart.inc.php');
+   
+6. Click "Configure" link under the module, it will bring you to the module configuration screen
+
+
+Upgrade from old version
+========================
+0. As best practice, please back up your database for just in case.
+1. Record/Memo the module configuration parameters
+2. Uninstall old version of same module at back office - Modules tab
+3. Delete the module (uninstalled already) , Back office - Modules tab
+   (make sure all files are gone via FTP or File manager)
+4. Execute above "New Insall" from 1. - 6.
+
+Your existing data will remain unchanged.
+But you will need to re-configure the module.
+
+
+
+User's Guide - How to make it work
+==============================
+Assume you have finished the installation of module.
+Here is steps you need to follow to configure your store for the module to work properly.
+
+1. Create an special category for token packages. This category should only contain taoken package products.
+   All products registered under this category, will be deemed as token(credit) products.
+   
+2. Decide the unit value of a token.
+   For example, you can set the $1 for each token, or $0.01, 0.001, or $2.5, $5 per token or any unit value of the token.
+
+3. Configure your module
+  At the module configuration screen, please 
+  3.1 select the categopry we created at above 1. as Token Category 
+  3.2 input unit value of the tokken. (this value is amount in your store default currency)
+  3.3 set the visibility of block of Product detail page
+  3.3 Click save
+
+4. Crerate products for token packages and register them under the special category we created as Token.
+  Please note:
+  1. When user purchase the token packages, the module we convert into number of tokens automaticlly.
+  2. The converting is always based on the RETAIL PRICE before any discount if applicable.
+     For example, if you create product $30, but with 10% dicount.
+     The number of tokens user will have is $30/Token Unit Price(assume $1) = 30
+     It emans user has purchaser 30 token with $27.
+
+5. Create products that user can purchase by tokens.
+  Please don not register any products under the special Token category we created above 1.
+  You can crate any number of categoris and sub categoris for non-token products
+  
+6. After all abouve setting is finished, you are ready to go.
+
+
+NOTE:
+The Ajax mode of shopping block is disabled when you use this module, because it is not necessary.
+

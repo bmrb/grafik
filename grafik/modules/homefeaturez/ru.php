@@ -1,0 +1,32 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_5d5a81dac9fe85dbd0192c81bcb8562d'] = 'Популярные товары на главной (zapalm версия)';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_ff52a44fff12e6ca410ae40faf2e73cc'] = 'Этот модуль отображает популярные товары на главной странице. В отличие от стандартной версии модуля, этот позволяет задать категорию товаров, которые будут показываться на главной. Модуль так же позволяет включить перемешивание товаров, чтобы популярные товары на главной странице показывались случайно.';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_dd0de17e8450a0fd3248b19c4a4f803b'] = 'Неверное количество товаров';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_c888438d14855d7d96a2724ee9c306bd'] = 'Настройки обновлены';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_f4f70727dc34561dfde1a3c529b6205c'] = 'Настройки';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_20c47700083df21a87e47d9299ef4dc4'] = 'Количество отображаемых товаров';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_ada7594fb1614c6b6d271699c8511d5e'] = 'Количество товаров отображаемых на главной странице (по умолчанию: 10)';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_69e18efcba76fc82625abde1fe83611d'] = 'ID категории';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_3900ed8cf56d23f970640acb6f0f4c4b'] = 'Впишите ID категории, товары которой будут показываться на главной странице (по умолчанию: 1 – категория Главная)';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_ca9ee8d80f4ac55dcad9bea817f43db1'] = 'Перемешивать товары';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_1bc617857ee756f153f420df5280ded5'] = 'Поставьте галочку, если хотите чтобы товары в блоке перемешивались';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_c9cc8cce247e49bae79f15173ce97354'] = 'Сохранить';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_77abd48d0a4b2599252746283cf415bd'] = 'Информация и модуле';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_34b6cd75171affba6957e308dcbd92be'] = 'Версия';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_794df3791a8c800841516007427a2aa3'] = 'Лицензия';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_1659e51b77a2e746942d2f4d0c2278a0'] = 'свободная';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_6bb6d58b728200b4db7d63055275a07d'] = 'Форумы';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_ba0a6ddd94c73698a3658f92ac222f8a'] = 'английский';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_11eb6dd2f9dcf57686be6f609d853f9c'] = 'русский';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_15bbb9d0bbf25e8d2978de1168c749dc'] = 'Сайт';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_bbaff12800505b22a853e8b7f4eb6a22'] = 'Контакт';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_c439802d77032ec9895a48c6ba5883e2'] = 'Пожалуйста, пишите мне только на русском или на английском';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_ef0b714daae3279c5c56db2714ec8575'] = 'Спасибо за то, что пользуетесь модулем';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_ca7d973c26c57b69e0857e7a0332d545'] = 'Популярные товары';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_d3da97e2d9aee5c8fbe03156ad051c99'] = 'Подробнее';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_4351cfebe4b61d8aa5efa1d020710005'] = 'Просмотр';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_2d0f6b8300be19cf35e89e66f0677f95'] = 'Добавить в корзину';
+$_MODULE['<{homefeaturez}prestashop>homefeaturez_e0e572ae0d8489f8bf969e93d469e89c'] = 'Товаров нет';
