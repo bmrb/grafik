@@ -156,9 +156,6 @@
 					{$HOOK_LEFT_COLUMN}
 				</div>
                 {/if}
-
-                
-
 				<!-- Center -->
 				<div id="center_column">
 	{/if}
