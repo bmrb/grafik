@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-11-07 18:59:41
+<?php /* Smarty version Smarty-3.0.7, created on 2012-11-08 20:41:39
          compiled from "C:\xampp\htdocs\grafik\grafik/modules/blockbestsellers/blockbestsellers.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:12362509aaf9d67c465-14171321%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:22901509c1903b3e204-38376258%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '12362509aaf9d67c465-14171321',
+  'nocache_hash' => '22901509c1903b3e204-38376258',
   'function' => 
   array (
   ),

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-11-07 18:59:41
+<?php /* Smarty version Smarty-3.0.7, created on 2012-11-08 20:41:39
          compiled from "C:\xampp\htdocs\grafik\grafik/modules/agileprepaidcredit/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:9265509aaf9d910bc5-21552683%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:21400509c1903de5ce2-12640818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '9265509aaf9d910bc5-21552683',
+  'nocache_hash' => '21400509c1903de5ce2-12640818',
   'function' => 
   array (
   ),

@@ -22,29 +22,29 @@
                     var roundMode = {$roundMode};
         </script>
         {if $page_name == "product" or $page_name == "search" or $page_name == "random-products" or $page_name == "new-products" or $page_name == "best-sales" or $page_name == "category" && $smarty.get.id_category != "26" or $page_name == "random-products"}
-            <link href="/grafik/themes/prestashop/css/global2.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="themes/prestashop/css/global2.css" rel="stylesheet" type="text/css" media="all" />
         {else}
-            <link href="/grafik/themes/prestashop/css/global.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="themes/prestashop/css/global.css" rel="stylesheet" type="text/css" media="all" />
         {/if}
-        <link href="/grafik/themes/prestashop/css/addresses.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockpaymentlogo/blockpaymentlogo.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockviewed/blockviewed.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockcart/blockcart.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockmyaccount/blockmyaccount.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockbestsellers/blockbestsellers.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockcategories/blockcategories.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockspecials/blockspecials.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blocknewproducts/blocknewproducts.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockmanufacturer/blockmanufacturer.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockcms/blockcms.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockadvertising/blockadvertising.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blocktags/blocktags.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blockstore/blockstore.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/css/jquery.autocomplete.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/product.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/css/thickbox.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/product_list.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="/grafik/themes/prestashop/css/modules/blocksearch/blocksearch.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/addresses.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockpaymentlogo/blockpaymentlogo.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockviewed/blockviewed.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockcart/blockcart.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockmyaccount/blockmyaccount.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockbestsellers/blockbestsellers.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockcategories/blockcategories.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockspecials/blockspecials.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blocknewproducts/blocknewproducts.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockmanufacturer/blockmanufacturer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockcms/blockcms.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockadvertising/blockadvertising.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blocktags/blocktags.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blockstore/blockstore.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.autocomplete.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/product.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/thickbox.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/product_list.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="themes/prestashop/css/modules/blocksearch/blocksearch.css" rel="stylesheet" type="text/css" media="all" />
         {if isset($js_files)}
             {foreach from=$js_files item=js_uri}
                 <script type="text/javascript" src="{$js_uri}"></script>
@@ -65,16 +65,16 @@
                     <div class="toplinks">
                         <ul>
                             {if $logged}
-                                <li><a href="/grafik/my-account.php">My Account<em class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>&nbsp;&nbsp;&nbsp;</a></li>
+                                <li><a href="my-account.php">My Account<em class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>&nbsp;&nbsp;&nbsp;</a></li>
                             {else}
-                                <li><a href="/grafik/authentication.php">Subscribe<em class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>&nbsp;&nbsp;&nbsp;</a></li>
+                                <li><a href="authentication.php">Subscribe<em class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>&nbsp;&nbsp;&nbsp;</a></li>
                             {/if}
 
                             {if $logged}
                                 <li><a>&nbsp;&nbsp;&nbsp;
                                         Hi, {$cookie->customer_firstname} {$cookie->customer_lastname}
                                         &nbsp;&nbsp;&nbsp;</a></li>
-                                <li><a href="/grafik/26-credits">
+                                <li><a href="26-credits">
                                         Credits left: {$balance}
 
                                     </a>
@@ -83,7 +83,7 @@
                                         Sign Out
                                         &nbsp;&nbsp;&nbsp;</a></li>
                                     {else}
-                                <li><a href="/grafik/authentication.php">
+                                <li><a href="authentication.php">
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         Sign in
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,18 +107,18 @@
 
                     <div class="toplinks2">
                         <ul>
-                            <li><a href="/grafik/new-products.php"><img src="/grafik/themes/prestashop/img/ab1.jpg" /></a></li>
-                            <li><a href="/grafik/best-sales.php"><img src="/grafik/themes/prestashop/img/ab2.jpg" /></a></li>
-                            <li><a href="/grafik/random-products.php"><img src="/grafik/themes/prestashop/img/ab3.jpg" /></a></li>
+                            <li><a href="new-products.php"><img src="themes/prestashop/img/ab1.jpg" /></a></li>
+                            <li><a href="best-sales.php"><img src="themes/prestashop/img/ab2.jpg" /></a></li>
+                            <li><a href="random-products.php"><img src="themes/prestashop/img/ab3.jpg" /></a></li>
                         </ul>
                     </div>
                 {/if}
                 {if $page_name == "category" && $smarty.get.id_category != "26"}
                     <div class="toplinks2">
                         <ul>
-                            <li><a href="/grafik/new-products.php"><img src="/grafik/themes/prestashop/img/ab1.jpg" /></a></li>
-                            <li><a href="/grafik/best-sales.php"><img src="/grafik/themes/prestashop/img/ab2.jpg" /></a></li>
-                            <li><a href="/grafik/random-products.php"><img src="/grafik/themes/prestashop/img/ab3.jpg" /></a></li>
+                            <li><a href="new-products.php"><img src="themes/prestashop/img/ab1.jpg" /></a></li>
+                            <li><a href="best-sales.php"><img src="themes/prestashop/img/ab2.jpg" /></a></li>
+                            <li><a href="random-products.php"><img src="themes/prestashop/img/ab3.jpg" /></a></li>
                         </ul>
                     </div>
                 {/if} 

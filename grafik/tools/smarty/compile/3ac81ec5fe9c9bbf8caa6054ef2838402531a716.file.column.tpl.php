@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-11-07 18:59:41
+<?php /* Smarty version Smarty-3.0.7, created on 2012-11-08 20:41:39
          compiled from "C:\xampp\htdocs\grafik\grafik/modules/paypal/column.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:26840509aaf9d8b3dd7-10536504%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:10619509c1903d884e0-66534095%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '26840509aaf9d8b3dd7-10536504',
+  'nocache_hash' => '10619509c1903d884e0-66534095',
   'function' => 
   array (
   ),

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-11-07 18:59:34
+<?php /* Smarty version Smarty-3.0.7, created on 2012-11-08 20:41:39
          compiled from "C:\xampp\htdocs\grafik\grafik/themes/prestashop/./order-steps.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:23476509aaf9656cc08-11541300%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:24318509c1903277611-64613573%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '23476509aaf9656cc08-11541300',
+  'nocache_hash' => '24318509c1903277611-64613573',
   'function' => 
   array (
   ),
